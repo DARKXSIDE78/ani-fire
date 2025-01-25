@@ -83,20 +83,18 @@ export default function Page({
     enabled: !!episodeId,
   });
 
-  const defaultServer = useMemo(() => {
-    if (!servers) return "hd-1";
+  useEffect(() => {
+    if (!servers) return;
     const server =
       servers.sub.length > 0
         ? servers.sub[0].serverName
         : servers.raw[0].serverName;
     setCurrentServer(server);
-    return server;
-  }, [servers, setCurrentServer]);
+  }, [servers]);
 
-  const defaultCategory = useMemo(() => {
+  useEffect(() => {
     const currentCategory = !servers?.sub.length ? "raw" : "sub";
     setCategory(currentCategory);
-    return currentCategory;
   }, [servers]);
 
   const { data, isLoading } = useQuery({
@@ -108,10 +106,7 @@ export default function Page({
     ],
     queryFn: () =>
       getAnimeStreamingLinksByEpisodeId(
-        encodedEpisodesId +
-          `&server=${
-            currentServer ? currentServer : defaultServer
-          }&category=${category ? category : defaultCategory}`,
+        encodedEpisodesId + `&server=${currentServer}&category=${category}`,
       ),
     enabled: !!servers && !!encodedEpisodesId && !!category && !!currentServer,
   });
@@ -196,8 +191,8 @@ export default function Page({
             {animeInfo?.anime.info.name}
           </Link>
         </div>
-        <div className="wrapper-container flex w-full flex-col gap-1.5 bg-primary-500 xl:px-0 3xl:flex-row">
-          <div className="mx-auto h-full w-full max-w-7xl overflow-y-scroll 3xl:basis-[17%]">
+        <div className="wrapper-container flex w-full flex-col gap-1.5 bg-primary-500 xl:gap-0 3xl:flex-row">
+          <div className="mx-auto h-full w-full max-w-7xl 3xl:basis-[18%]">
             {isEpisodesLoading || !episodes ? (
               <div className="grid h-full min-h-[376px] w-full shrink-0 flex-col place-items-center lg:min-h-[590px] 3xl:min-h-[716px]">
                 <BeatLoader childClassName="h-3.5 w-3.5" />
@@ -209,7 +204,7 @@ export default function Page({
 
           <div
             className={cn(
-              "order-first mx-auto w-full max-w-7xl shrink-0 3xl:order-none 3xl:basis-[63%]",
+              "order-first mx-auto w-full max-w-7xl shrink-0 3xl:order-none 3xl:basis-[60%]",
               light && "z-[9999]",
             )}
           >
@@ -232,7 +227,7 @@ export default function Page({
 
             {servers && <SelectServers {...servers} />}
           </div>
-          <div className="max-h-[590px] w-full shrink-0 px-4 xl:px-0 3xl:basis-[20%]">
+          <div className="max-h-[590px] w-full shrink-0 px-4 xl:px-0 3xl:basis-[22%]">
             {isInfoLoading ? (
               <div className="grid h-full w-full place-items-center">
                 <BeatLoader childClassName="h-3 w-3" />
