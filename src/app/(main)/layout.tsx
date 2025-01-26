@@ -1,6 +1,8 @@
+import React from 'react';
 import MainWrapper from "@/components/main/layout/main-wrapper";
 import Navbar from "@/components/main/ui/navbar";
-import type { Metadata } from "next";
+import { Metadata } from "next";
+import { FaTelegram, FaInstagram, FaDiscord, FaYoutube } from 'react-icons/fa'; // Import social icons
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -18,7 +20,9 @@ export const metadata: Metadata = {
     "subbed anime free",       // Subtitled anime for free
     "dubbed anime free",       // Dubbed anime for free
     "watch anime online free", // Free watch option
-    "AniWatch",                // Competitor
+    "AniWatch",    
+    "Zoro",
+    "HiAnime",// Competitor
     "watch anime online",      // Common search
     "trending anime",          // Popular content
     "latest anime",            // Fresh content
@@ -47,9 +51,28 @@ export default function MainRootLayout({ children }: { children: React.ReactNode
     <MainWrapper>
       <Navbar />
       {children}
+
+      {/* Social Media Icons Above Footer */}
+      <div className="flex justify-center gap-8 py-6">
+        <a href="https://t.me/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary-500">
+          <FaTelegram />
+        </a>
+        <a href="https://www.instagram.com/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary-500">
+          <FaInstagram />
+        </a>
+        <a href="https://discord.gg/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary-500">
+          <FaDiscord />
+        </a>
+        <a href="https://www.youtube.com/c/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary-500">
+          <FaYoutube />
+        </a>
+      </div>
+
       <footer className="bg-primary-100 px-4 py-10">
         <div className="wrapper-container flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
-          <p>ZoroSenpai does not store any files on our server. We only provide links to media hosted on third-party services.</p>
+          <p>
+            ZoroSenpai does not store any files on our server. We only provide links to media hosted on third-party services.
+          </p>
           <p>© ZoroSenpai.to. All rights reserved.</p>
         </div>
       </footer>
