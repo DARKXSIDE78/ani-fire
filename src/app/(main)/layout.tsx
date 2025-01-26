@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "ZoroSenpai | Watch your favorite shows without any interrupts.",
     description:
       "Explore the trending anime, spotlight anime, latest anime & many more.",
-    images: "/og-image.png",
+    images: "/og-image.png", // Ensure you have the correct image path
     type: "website",
   },
 };
@@ -54,16 +54,16 @@ export default function MainRootLayout({ children }: { children: React.ReactNode
 
       {/* Social Media Icons Above Footer */}
       <div className="flex justify-center gap-8 py-6">
-        <a href="https://t.me/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary-500">
+        <a href="https://t.me/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl text-[#0088cc] hover:text-primary-500">
           <FaTelegram />
         </a>
-        <a href="https://www.instagram.com/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary-500">
+        <a href="https://www.instagram.com/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl text-[#E4405F] hover:text-primary-500">
           <FaInstagram />
         </a>
-        <a href="https://discord.gg/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary-500">
+        <a href="https://discord.gg/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl text-[#7289DA] hover:text-primary-500">
           <FaDiscord />
         </a>
-        <a href="https://www.youtube.com/c/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary-500">
+        <a href="https://www.youtube.com/c/zoro_senpai" target="_blank" rel="noopener noreferrer" className="text-2xl text-[#FF0000] hover:text-primary-500">
           <FaYoutube />
         </a>
       </div>
