@@ -8,12 +8,38 @@ export const metadata: Metadata = {
   description:
     "Explore the trending anime, spotlight anime, latest anime & many more.",
   keywords: [
-    "anifire",
-    "anime streaming website",
-    "trending anime",
-    "latest anime",
-    "popular anime",
-  ],
+  "ZoroSenpai",              // Your brand
+  "anime streaming",         // General term
+  "Gogoanime",               // Competitor
+  "9anime",                  // Competitor
+  "KissAnime",               // Competitor
+  "AnimeFreak",              // Competitor
+  "watch anime online",      // Common search
+  "trending anime",          // Popular content
+  "latest anime",            // Fresh content
+  "anime series",            // Focus on series
+  "anime episodes",          // For episode-based searches
+  "anime movies",            // For movie-focused searches
+  "anime HD streaming",      // High-quality streaming
+  "subbed anime",            // Subtitles
+  "dubbed anime",            // Dubs
+  "action anime",            // Action-focused shows
+  "romance anime",           // Romance genre
+  "shonen anime",            // Popular genre
+  "isekai anime",            // Popular genre
+  "anime for kids",          // Family-friendly content
+  "anime for adults",        // More mature content
+  "watch anime free",        // Free option
+  "anime with English subtitles", // Subbed content
+  "anime with English dub", // Dubbed content
+  "watch anime online free", // Free streaming
+  "AniWatch",                // Competitor
+  "Masterani",               // Competitor
+  "Animixplay",              // Competitor
+  "AnimeHeaven",             // Competitor
+  "Chia-Anime",              // Competitor
+  "FMovies Anime",           // Movies section
+]
   openGraph: {
     title: "ZoroSenpai | Watch your favorite shows without any interrupts.",
     description:
