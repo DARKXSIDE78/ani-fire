@@ -18,12 +18,12 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
 
   return {
-    title: `${capitalize(genre.replaceAll("-", " "))} Anime - Page ${page} | AniFire`,
+    title: `${capitalize(genre.replaceAll("-", " "))} Anime - Page ${page} | ZoroSenpai`,
     keywords: genre.split("-"),
-    description: `Explore vast library for ${genre} Genre only on AniFire.`,
+    description: `Explore vast library for ${genre} Genre only on ZoroSenpai.`,
     openGraph: {
-      title: `${capitalize(genre.replaceAll("-", " "))} Anime - Page ${page} | AniFire`,
-      description: `Explore vast library for ${genre} Genre only on AniFire.`,
+      title: `${capitalize(genre.replaceAll("-", " "))} Anime - Page ${page} | ZoroSenpai`,
+      description: `Explore vast library for ${genre} Genre only on ZoroSenpai.`,
       images: [...previousImages],
     },
   };
