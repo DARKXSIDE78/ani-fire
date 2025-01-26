@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   "AnimeHeaven",             // Competitor
   "Chia-Anime",              // Competitor
   "FMovies Anime",           // Movies section
-]
+],
   openGraph: {
     title: "ZoroSenpai | Watch your favorite shows without any interrupts.",
     description:
