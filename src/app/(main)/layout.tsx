@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "ZoroSenpai | Watch your favorite shows without any interrupts.",
     description:
       "Explore the trending anime, spotlight anime, latest anime & many more.",
-    images: "/og-ZoroX.png", // Ensure you have the correct image path
+    images: "/og-image.png", // Ensure you have the correct image path
     type: "website",
   },
 };
