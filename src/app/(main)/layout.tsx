@@ -4,18 +4,68 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AniFire | Watch your favorite shows without any interrupts.",
+  title: "ZoroSenpai | Watch your favorite shows without any interrupts.",
   description:
     "Explore the trending anime, spotlight anime, latest anime & many more.",
   keywords: [
-    "anifire",
+    "ZoroSenpai",
     "anime streaming website",
     "trending anime",
     "latest anime",
     "popular anime",
+    "ZoroSenpai",              // Your brand
+    "anime streaming",         // General term
+    "Gogoanime",               // Competitor
+    "9anime",                  // Competitor
+    "KissAnime",               // Competitor
+    "AnimeFreak",              // Competitor
+    "KayoAnime",               // Competitor
+    "download anime for free", // For download-focused searches
+    "free anime download",     // Free download option
+    "free anime streaming",    // Emphasizes free streaming
+    "watch anime free",        // Free viewing option
+    "anime download site",     // People looking for anime download sources
+    "anime torrents",          // Popular among users looking for torrent links
+    "download anime episodes", // Episode download
+    "anime free download",     // For those seeking free anime to download
+    "watch anime for free",    // Free streaming searches
+    "best free anime site",    // For people looking for the best free platforms
+    "anime streaming free",    // Another free search term
+    "anime download HD",       // For high-definition downloads
+    "anime download MP4",      // Specific download format
+    "anime download 1080p",    // High-definition download for anime fans
+    "anime download 720p",     // Another popular resolution for downloads
+    "subbed anime free",       // Subtitled anime for free
+    "dubbed anime free",       // Dubbed anime for free
+    "watch anime online free", // Free watch option
+    "AniWatch",                // Competitor
+    "Masterani",               // Competitor
+    "Animixplay",              // Competitor
+    "AnimeHeaven",             // Competitor
+    "Chia-Anime",              // Competitor
+    "FMovies Anime",
+    "watch anime online",      // Common search
+    "trending anime",          // Popular content
+    "latest anime",            // Fresh content
+    "anime series",            // Focus on series
+    "anime episodes",          // For episode-based searches
+    "anime movies",            // For movie-focused searches
+    "anime HD streaming",      // High-quality streaming
+    "subbed anime",            // Subtitles
+    "dubbed anime",            // Dubs
+    "action anime",            // Action-focused shows
+    "romance anime",           // Romance genre
+    "shonen anime",            // Popular genre
+    "isekai anime",            // Popular genre
+    "anime for kids",          // Family-friendly content
+    "anime for adults",        // More mature content
+    "watch anime free",        // Free option
+    "anime with English subtitles", // Subbed content
+    "anime with English dub", // Dubbed content
+    "watch anime online free",
   ],
   openGraph: {
-    title: "AniFire | Watch your favorite shows without any interrupts.",
+    title: "ZoroSenpai | Watch your favorite shows without any interrupts.",
     description:
       "Explore the trending anime, spotlight anime, latest anime & many more.",
     images: "/og-image.png",
